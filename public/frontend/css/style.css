@@ -1,0 +1,139 @@
+
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: 'Super Dream';
+    src: url('../font/super_dream/Super\ Dream.ttf') format('ttf'),
+    /* Add more font sources if needed, like .ttf or .otf */
+    /* font-weight and font-style can be specified here too */
+}
+
+:root{
+    --primary: #026799;
+    --primaryLight: #00abff;
+    --secondary: #ff6c00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#ffffffe1,#ffffffe1), url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.brand-logo img{ width: 450px; }
+.heading_big{ font-size: 4rem; font-family: 'Super Dream'; font-weight: 900; }
+
+#search-form .search-input{
+    position: relative;
+    padding: 10px 50px;
+    width: 100%;
+    font-size: 16px;
+    color: #111;
+    border: 1px solid #e2e2e2;
+    
+}
+#search-form .search-input:hover,
+#search-form .search-input:focus{
+    outline: 0;
+    border-color: var(--primaryLight);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+}
+.search-input::before{
+    position: absolute;
+    content: '\F52A';
+    top: 50%; left: 10px;
+    transform: translateY(-50%);
+}
+.btn_theme{
+    padding: 7px 30px;
+    border: none;
+    /* background-color: var(--primary); */
+    color: #111;
+    margin: 0 3px;
+}
+.btn_theme:hover{
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+}
+/* ############################################## */
+.btn-box-top{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+/* ############################################## */
+.mt-100px{ margin-top: 100px; }
+.mt-200px{ margin-top: 200px; }
+
+.group-title{ 
+    position: absolute;
+    top: 0;
+    left: 45px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 4px 10px;
+    box-shadow: 0 3px 8px #ebebeb;
+    font-size: 12px;
+ }
+/* ############################################## */
+/* ############################################## */
+/* Login  */
+.input-label{ font-size: 12px; font-weight: 500; }
+.input-icon-common,
+#username-icon,
+#password-icon
+{ background-color: transparent; border: none ; border-bottom: 1px solid var(--primary) !important; border-radius: 0 !important; color: var(--primary);  }
+.form-input{ background-color: #fff; border: none !important; border-bottom: 1px solid var(--primary) !important; border-radius: 0; font-size: 14px; }
+.form-input:focus{ border-color: var(--primaryLight) !important; outline: 0 !important; box-shadow: none;   }
+.icon-box .icon-img{ width: 23px; margin: 0 3px; }
+/* ############################################## */
+.madeTypeBox{ display: none; }
+/* ############################################## */
+#liveAlertPlaceholder{
+    position: absolute;
+    top: 20px; right: 20px;
+    z-index: 212121;
+}
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+.color-primary{ color: var(--primary); }
+.color-secondary{ color: var(--secondary); }
+
+.bg-primary{ background-color: var(--primary) !important; }
+.bg-primaryLight{ background-color: var(--primaryLight); }
+.bg-secondary{ background-color: var(--secondary) ; }
+
+.hover-primary:hover{ background-color: var(--primary) !important; color: #fff; }
+.hover-secondary:hover{ background-color: var(--secondary) !important; color: #fff; }
+
+.link-default{ text-decoration: none; color: #111; }
+.link-default:hover{ color: var(--primary); }
+
+.fs-12{ font-size: 12px; }
+
+.drop-shadow{ filter: drop-shadow(0 3px 5px #929292); }
+/* ############################################## */
+/* ############################################## */
+

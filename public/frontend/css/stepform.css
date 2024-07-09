@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+}
+#multistepsform-buyer,
+#multistepsform {
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+#multistepsform-buyer fieldset ,
+#multistepsform fieldset 
+{
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+#multistepsform-buyer fieldset:not(:first-of-type) ,
+#multistepsform fieldset:not(:first-of-type) 
+{
+  display: none;
+}
+#multistepsform-buyer input,
+#multistepsform-buyer select,
+#multistepsform input,
+#multistepsform select,
+#multistepsform-buyer textarea, 
+#multistepsform textarea 
+{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
+.radio-btn{ width: auto !important; border-radius: 50%; }
+#multistepsform-buyer input:focus,
+#multistepsform input:focus,
+#multistepsform-buyer textarea:focus 
+#multistepsform textarea:focus 
+{
+  border-color: var(--primary);
+  outline: none;
+  color: #637373;
+}
+#multistepsform-buyer .action-button ,
+#multistepsform .action-button 
+{
+  width: 85px;
+  background: var(--primary);
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#multistepsform-buyer .action-button:hover,
+#multistepsform .action-button:hover,
+#multistepsform-buyer .action-button:focus ,
+#multistepsform .action-button:focus 
+{
+  box-shadow: 0 0 0 2px #f08a5d, 0 0 0 3px #ff9761;
+  color: #fff;
+}
+#multistepsform-buyer .fs-title,
+#multistepsform .fs-title
+ {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+#multistepsform-buyer .fs-subtitle ,
+#multistepsform .fs-subtitle 
+{
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+#multistepsform-buyer #progressbar ,
+#multistepsform #progressbar 
+{
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+#multistepsform-buyer #progressbar li,
+#multistepsform #progressbar li
+ {
+  list-style-type: none;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 9px;
+  /* width: calc(100% / 8); */
+  /* float: left; */
+  margin: 0 7px;  
+  position: relative;
+}
+/* #multistepsform #progressbar li{} */
+#multistepsform-buyer #progressbar li:before ,
+#multistepsform #progressbar li:before 
+{
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  background: var(--secondary);
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+#multistepsform-buyer #progressbar li:after, 
+#multistepsform #progressbar li:after 
+{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #679b9b;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+#multistepsform-buyer #progressbar li:first-child:after,
+#multistepsform #progressbar li:first-child:after
+ {
+  content: none;
+}
+#multistepsform-buyer #progressbar li.active ,
+#multistepsform #progressbar li.active 
+{
+  color: #679b9b;
+}
+#multistepsform-buyer #progressbar li.active:before,
+#multistepsform #progressbar li.active:before,
+ #multistepsform-buyer #progressbar li.active:after ,
+ #multistepsform #progressbar li.active:after 
+ {
+  background: #679b9b;
+  color: white;
+}/*# sourceMappingURL=stepform.css.map */
+
+img.modeOfPaymentIcon{
+  width: 40px;
+}
+
+
+@media screen and (min-width: 100px) {
+  #multistepsform-buyer,
+  #multistepsform
+  { width: 100%; padding: 20px; }
+  #multistepsform-buyer fieldset, 
+  #multistepsform fieldset 
+  { margin:0; width: 100%; }
+}
